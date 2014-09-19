@@ -1,0 +1,11 @@
+
+<% @restaurantes.each do |restaurante| %>
+  <tr>
+    <td><%= restaurante.nome %></td>
+    <td><%= restaurante.endereco %></td>
+    <td><%= restaurante.especialidade %></td>
+    <td>
+      <%= link_to 'Mostrar', action: 'show', id: restaurante %>
+    </td>
+  </tr>
+<% end %>
